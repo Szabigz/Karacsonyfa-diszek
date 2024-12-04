@@ -1,0 +1,98 @@
+﻿<Window x:Class="Karacsonyfa_diszek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Karacsonyfa_diszek"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock
+            Grid.ColumnSpan="3"
+            VerticalAlignment="Top"
+            TextAlignment="Center"
+            FontSize="30"
+            >Karácsonyfa Díszek</TextBlock>
+
+        <Border
+            Margin="15"
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            BorderThickness="3"
+            BorderBrush="CadetBlue"
+            CornerRadius="20"
+            >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock
+                   FontSize="20"
+                   VerticalAlignment="Center"
+            >Bolt</TextBlock>
+                <StackPanel
+                    Grid.Row="1"
+                    Orientation="Horizontal"
+                    Name="Store">
+
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border
+            Margin="15,15,176,15"
+            Grid.Row="2"
+            Grid.ColumnSpan="3"
+            BorderThickness="3"
+            BorderBrush="CadetBlue"
+            CornerRadius="20"
+            >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                   FontSize="20"
+                   VerticalAlignment="Center"
+            >Kosár</TextBlock>
+                <StackPanel
+                    Grid.Row="1"
+                    Orientation="Horizontal"
+                    Name="Cart">
+
+ 
+                </StackPanel>
+            </Grid>
+        </Border>
+        <TextBlock
+            Grid.Row="2"
+            Grid.Column="2"
+            TextAlignment="Center"
+            Margin="88,15,32,15"
+            >Végösszeg:</TextBlock>
+        <Button
+               Grid.Row="2"
+               Grid.Column="2"
+               Margin="120,35,32,25"
+               Background="CadetBlue"
+               Foreground="White"
+               FontWeight="Bold"
+            >Kifizetes</Button>
+    </Grid>
+</Window>
