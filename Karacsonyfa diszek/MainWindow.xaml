@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Karacsonyfa_diszek"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -33,20 +33,21 @@
             CornerRadius="20"
             >
             <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="319*"/>
+                    <ColumnDefinition Width="59*"/>
+                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <TextBlock
                    FontSize="20"
-                   VerticalAlignment="Center"
+                   VerticalAlignment="Center" Margin="340,-37,-340,40" Grid.ColumnSpan="2"
             >Bolt</TextBlock>
                 <StackPanel
-                    Grid.Row="1"
                     Orientation="Horizontal"
-                    Name="Store">
-
-                </StackPanel>
+                    Name="Store" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
             </Grid>
         </Border>
 
@@ -69,15 +70,11 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock
                    FontSize="20"
-                   VerticalAlignment="Center"
+                   VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="246,-33,-46,36"
             >Kosár</TextBlock>
                 <StackPanel
-                    Grid.Row="1"
                     Orientation="Horizontal"
-                    Name="Cart">
-
- 
-                </StackPanel>
+                    Name="Cart" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
             </Grid>
         </Border>
         <TextBlock
